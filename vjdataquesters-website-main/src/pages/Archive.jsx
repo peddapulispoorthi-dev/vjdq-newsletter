@@ -5,13 +5,13 @@ const Archive = () => {
   { 
     volume: "Volume 2 | 2024", 
     description: "Our 2024 annual review covering all major technical achievements and student milestones.", 
-    cover: "/newsletter-previews/cover(1).png.png", 
+    cover: "/newsletter-previews/cover(2024).png", 
     pdf: "https://drive.google.com/file/d/1VBhI2sp5J2RBFuTFMbVI45RSs9IJh_fy/preview" 
   },
   { 
     volume: "Volume 1 | 2023", 
     description: "The foundational issue marking the start of VJ Data Questers and our core mission.", 
-    cover: "/newsletter-previews/cover(1).png.png",
+    cover: "/newsletter-previews/cover(2023).png",
     pdf: "https://drive.google.com/file/d/1VBhI2sp5J2RBFuTFMbVI45RSs9IJh_fy/preview" 
   },
 ];
