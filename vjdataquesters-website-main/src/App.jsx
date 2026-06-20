@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import router from "./pages";
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <Router>
       <Analytics />
+      <SpeedInsights />
       <Loading load={load} />
       <Header />
       <ScrollToTop />
