@@ -1,10 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 const Newsletter = () => {
   const navigate = useNavigate();
   return (
+    <>
+      <Helmet>
+        <title>Newsletter | VJ Data Questers</title>
+        <meta name="description" content="Read the latest editions of the VJ Data Questers newsletter, featuring AI trends, project showcases, and data science insights." />
+      </Helmet>
     <div className="bg-slate-950 min-h-screen">
+
       {/* Hero Section */}
      {/* Hero Section */}
 <section className="relative h-[80vh] flex flex-col justify-center items-center overflow-hidden">
@@ -59,13 +66,13 @@ const Newsletter = () => {
         Dive into the annual highlights of VJ Data Questers. Explore our journey through the year, featuring key technical milestones, student success stories, and deep dives into the latest trends in data science and AI.
       </p>
       <a 
-        href="/newsletter(2025).pdf" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="w-full py-4 bg-white text-slate-950 font-bold rounded-lg text-center hover:bg-slate-200 transition-all block"
-      >
-        Read Full PDF
-      </a>
+  href="https://drive.google.com/file/d/1VBhI2sp5J2RBFuTFMbVI45RSs9IJh_fy/preview"
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="w-full py-4 bg-white text-slate-950 font-bold rounded-lg text-center hover:bg-slate-200 transition-all block"
+>
+  Read Full PDF
+</a>
     </div>
   </div>
 </section>
@@ -109,6 +116,7 @@ const Newsletter = () => {
         <p className="text-slate-500">Scroll down to explore editions...</p>
       </section>
     </div>
+    </>
   );
 };
 

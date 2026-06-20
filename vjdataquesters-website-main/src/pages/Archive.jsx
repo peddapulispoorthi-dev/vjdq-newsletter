@@ -1,21 +1,26 @@
 import React from 'react';
-
+import { Helmet } from 'react-helmet-async';
 const Archive = () => {
   const pastEditions = [
   { 
     volume: "Volume 2 | 2024", 
-    description: "add some description.", 
-    cover: "/newsletter-previews/cover(1).png.png",//add cover page
-    pdf: "/public/newsletter(2025).pdf" // Add the path to your PDF
+    description: "Our 2024 annual review covering all major technical achievements and student milestones.", 
+    cover: "/newsletter-previews/cover(1).png.png", 
+    pdf: "https://drive.google.com/file/d/1VBhI2sp5J2RBFuTFMbVI45RSs9IJh_fy/preview" 
   },
   { 
     volume: "Volume 1 | 2023", 
-    description: "add some description.", 
+    description: "The foundational issue marking the start of VJ Data Questers and our core mission.", 
     cover: "/newsletter-previews/cover(1).png.png",
-    pdf: "/public/newsletter(2025).pdf" // Add the path to your PDF
+    pdf: "https://drive.google.com/file/d/1VBhI2sp5J2RBFuTFMbVI45RSs9IJh_fy/preview" 
   },
 ];
   return (
+    <>
+    <Helmet>
+  <title>Archive | VJ Data Questers</title>
+  <meta name="description" content="Browse our past issues of VJ Data Questers insights and technical reviews." />
+</Helmet>
     <div className="bg-slate-950 min-h-screen py-20 px-4">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-black text-white mb-12">Newsletter Archive</h1>
@@ -48,6 +53,7 @@ const Archive = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
